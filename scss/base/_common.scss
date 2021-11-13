@@ -1,0 +1,104 @@
+body {
+  /* padding-top: 81px; */
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: var(--primary-color);
+  background-color: var(--second-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/* ------- text-color -------*/
+.header,
+.title,
+.filter-btn {
+  color: var(--primary-color);
+}
+
+.hero__title,
+.filter-btn:hover,
+.filter-btn:focus,
+.filter-btn.is-active,
+.footer {
+  color: var(--second-color);
+}
+
+.menu__link,
+.features__text,
+.team__text,
+.works-item-text {
+  color: var(--third-color);
+}
+
+.logo__web,
+.menu__link.is-current,
+.menu__link:hover,
+.menu__link:focus,
+.contacts__link:hover,
+.contacts__link:focus,
+.address__link:hover,
+.address__link:focus {
+  color: var(--first-accent-color);
+}
+
+/* ------- background-color ------- */
+.hero,
+.footer {
+  background-color: var(--first-bg-color);
+}
+
+.team,
+.filter-btn {
+  background-color: var(--second-bg-color);
+}
+
+.hero__btn,
+.filter-btn:hover,
+.filter-btn:focus,
+.filter-btn.is-active {
+  background-color: var(--first-accent-color);
+}
+
+/* ---------------- Animation --------------------- */
+
+.menu__link,
+.contacts__link,
+.address__link {
+  transition: color var(--duration) var(--cubic);
+}
+
+.hero__btn,
+.subscribe__btn,
+.modal-form__btn--submit {
+  transition: background-color var(--duration) var(--cubic);
+}

@@ -1,0 +1,12 @@
+@mixin font(
+  $font-weight: 400,
+  $font-size: 14px,
+  $line-height: 24px,
+  $letter-spacing: 0.03em,
+  $color: var(--primary-color)
+) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $font-size/$line-height;
+  letter-spacing: $letter-spacing;
+}

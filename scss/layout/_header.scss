@@ -1,0 +1,17 @@
+.header {
+  background-color: var(--second-color);
+  border-bottom: 1px solid var(--header-border-color);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 93px;
+}
+
+.header__contacts {
+  margin-left: auto;
+}
