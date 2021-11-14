@@ -11,10 +11,7 @@
   display: block;
   margin-bottom: 20px;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font();
   text-transform: uppercase;
 }
 
@@ -29,25 +26,21 @@
   color: var(--second-color);
   background-color: transparent;
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
-}
 
-.subscribe__email::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-
-  color: rgba(255, 255, 255, 0.6);
+  &::placeholder {
+    @include font(400, 16px, 1.25, var(--primary-ls), rgba(255, 255, 255, 0.6));
+  }
 }
 
 .subscribe__btn {
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.subscribe__btn:hover,
-.subscribe__btn:focus {
-  background-color: var(--second-accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--second-accent-color);
+  }
 }
 
 .subscribe__icon {

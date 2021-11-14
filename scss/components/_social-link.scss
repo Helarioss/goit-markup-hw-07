@@ -10,13 +10,13 @@
 
   transition: color var(--duration) var(--cubic),
     background-color var(--duration) var(--cubic);
-}
 
-.social-link:hover,
-.social-link:focus {
-  color: var(--second-color);
-  background-color: var(--first-accent-color);
-  outline: none;
+  &:hover,
+  &:focus {
+    color: var(--second-color);
+    background-color: var(--first-accent-color);
+    outline: none;
+  }
 }
 
 .social-link--theme-dark {

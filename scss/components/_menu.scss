@@ -12,11 +12,21 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(
+    500,
+    var(--primary-fs),
+    var(--primary-lh),
+    0.02em,
+    var(--primary-color)
+  );
 
-  color: inherit;
+  transition: color var(--duration) var(--cubic);
+
+  &:hover,
+  &:focus,
+  &--current {
+    color: var(--first-accent-color);
+  }
 }
 
 .menu__link--current::after {

@@ -1,9 +1,12 @@
 .title {
   margin-bottom: 50px;
 
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(
+    var(--title-fw),
+    var(--title-fs),
+    var(--title-lh),
+    var(--title-ls),
+    var(--primary-color)
+  );
   text-align: center;
-  letter-spacing: 0.03em;
 }

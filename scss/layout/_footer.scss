@@ -1,10 +1,9 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-.container--baseline {
-  display: flex;
-  align-items: baseline;
+
+  color: var(--second-color);
+  background-color: var(--first-bg-color);
 }
 
 .footer__address {
@@ -21,7 +20,7 @@
 .address {
   font-style: normal;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--primary-ls);
 }
 
 .address__text {
@@ -34,6 +33,13 @@
 
 .address__link {
   color: var(--fourth-color);
+
+  transition: color var(--duration) var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--first-accent-color);
+  }
 }
 
 .footer__invite {
@@ -43,9 +49,6 @@
 .footer__invite-title {
   margin-bottom: 20px;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font();
   text-transform: uppercase;
 }

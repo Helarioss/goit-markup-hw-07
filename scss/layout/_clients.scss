@@ -27,13 +27,13 @@
 
   transition: color var(--duration) var(--cubic),
     border-color var(--duration) var(--cubic);
-}
 
-.clients__link:hover,
-.clients__link:focus {
-  color: var(--first-accent-color);
-  border-color: var(--first-accent-color);
-  outline: none;
+  &:hover,
+  &:focus {
+    color: var(--first-accent-color);
+    border-color: var(--first-accent-color);
+    outline: none;
+  }
 }
 
 .clients__logo {

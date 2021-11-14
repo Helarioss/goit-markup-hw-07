@@ -10,11 +10,20 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(
+    500,
+    var(--primary-fs),
+    var(--primary-lh),
+    0.02em,
+    var(--third-color)
+  );
 
-  color: var(--third-color);
+  transition: color var(--duration) var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--first-accent-color);
+  }
 }
 
 .contacts__item:not(:last-child) {
